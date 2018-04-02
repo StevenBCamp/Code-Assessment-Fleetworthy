@@ -4,16 +4,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{CCAFC0A2-B820-4B68-9083-6DCEE1FADAE8}</ProjectGuid>
-    <OutputType>Exe</OutputType>
-    <RootNamespace>consoleApplication</RootNamespace>
-    <AssemblyName>consoleApplication</AssemblyName>
+    <ProjectGuid>{7B9384AC-B504-4673-82AD-3D88228B1059}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>codeAssessmentLibrary</RootNamespace>
+    <AssemblyName>codeAssessmentLibrary</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -23,7 +22,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -42,17 +40,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="Collections\receiptCollection.cs" />
+    <Compile Include="Models\item.cs" />
+    <Compile Include="Models\ReceiptCosts.cs" />
+    <Compile Include="Models\Tax.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\codeAssessmentLibrary\codeAssessmentLibrary.csproj">
-      <Project>{7b9384ac-b504-4673-82ad-3d88228b1059}</Project>
-      <Name>codeAssessmentLibrary</Name>
-    </ProjectReference>
+    <Folder Include="Methods\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

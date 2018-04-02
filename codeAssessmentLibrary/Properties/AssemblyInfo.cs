@@ -2,15 +2,14 @@
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
-
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("consoleApplication")]
+[assembly: AssemblyTitle("codeAssessmentLibrary")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("consoleApplication")]
+[assembly: AssemblyProduct("codeAssessmentLibrary")]
 [assembly: AssemblyCopyright("Copyright ©  2018")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -21,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("ccafc0a2-b820-4b68-9083-6dcee1fadae8")]
+[assembly: Guid("7b9384ac-b504-4673-82ad-3d88228b1059")]
 
 // Version information for an assembly consists of the following four values:
 //
@@ -36,4 +35,5 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyVersion("1.0.0.0")]
 [assembly: AssemblyFileVersion("1.0.0.0")]
 
-
+// Make Internals Visible to this Unit Test
+[assembly: InternalsVisibleTo("codeAssessmentTest")]
